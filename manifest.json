@@ -1,0 +1,29 @@
+{
+    "components": [
+        {
+            "id": "lattice-tools",
+            "alias": "local",
+            "type": "runtime",
+            "programs": [
+                {
+                    "id": "doit",
+                    "executable": "docker",
+                    "args": [
+                        "run",
+                        "-it",
+                        "${{ lattice-tool }}",
+                        "--help"
+                    ]
+                }
+            ],
+            "variables": [
+                {
+                    "name": "lattice-tool",
+                    "type": "string",
+                    "description": "Tool doing something",
+                    "default": "ghcr.io/eclipse-kuksa/kuksa-databroker:latest"
+                }
+            ]
+        }
+    ]
+}
