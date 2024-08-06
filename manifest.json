@@ -14,7 +14,7 @@
                         "${{ lattice-tool }}",
                         "--help"
                     ]
-                
+                }
             ],
             "variables": [
                 {
